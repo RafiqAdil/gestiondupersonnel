@@ -1,0 +1,32 @@
+SET NAMES utf8 ;
+
+
+USE LigueLorraine ;
+ 
+DROP FUNCTION IF EXISTS setJeton ;
+ 
+
+DELIMITER $$
+CREATE FUNCTION
+    setJeton(
+        jetonValue  VARCHAR(10)  , 
+        employeID   INT(3)       , 
+        mdpSHA1     VARCHAR(100) , 
+        mdpMD5      VARCHAR(32)    
+    ) RETURNS INT(1)
+    LANGUAGE SQL
+BEGIN
+    DECLARE employe_exists INTEGER ; 
+    IF CHAR_LENGTH( jetonValue ) != 10 THEN
+        RETURN 1 ; 
+    ELSE
+        
+        UPDATE employe SET jeton_employe = jetonValue, datejeton_employe = NOW() WHERE id_employe = employeID AND mdp_sha1_employe = mdpSHA1 AND mdp_md5_employe = mdpMD5 LIMIT 1 ;
+        RETURN 0 ;
+    END IF ;
+END;
+$$
+
+
+
+DELIMITER ;

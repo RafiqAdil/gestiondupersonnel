@@ -1,0 +1,27 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^ws-([A-Za-z]{5,})$ ws/$1.ws.php [L]
+
+# Page d'index (après connexion)
+# URL de la page contient une seule et unique fois soit "index"
+RewriteRule ^(index){1}$ index.php [L]
+
+# Page d'accueil (après connexion)
+# URL de la page contient une seule et unique fois soit "accueil" soit "home"
+RewriteRule ^(accueil|home){1}$ accueil.php [L]
+
+# Page d'ajout (après connexion)
+# URL de la page contient une seule et unique fois soit "ajouter" soit "add"
+RewriteRule ^(ajouter|add){1}$ ajouter.php [L]
+
+# Page d'affichage (après connexion)
+# URL de la page contient une seule et unique fois soit "liste" soit "list"
+RewriteRule ^(liste|list){1}$ liste.php [L]
+
+# Page d'ajout d'une ligue (après connexion)
+# URL de la page contient une seule et unique fois soit "ajouter_ligue" soit "add_ligue"
+RewriteRule ^(ajouter_ligue|add_ligue){1}$ ajouter_ligue.php [L]
+
+# Page mes informations (après connexion)
+# URL de la page contient une seule et unique fois soit "information" soit "information"
+RewriteRule ^(information|information){1}$ information.php [L]

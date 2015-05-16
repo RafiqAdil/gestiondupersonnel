@@ -1,0 +1,192 @@
+html body
+{
+	padding: 0;
+	margin: 0;
+	
+	/*background:linear-gradient(to right,#E0E0E0,#99CCFF);*/
+}
+
+html body footer
+{
+	padding-top: 10px;
+	margin-top: 0;
+	position: relative;
+    bottom:0px; /*hauteur du bas */	
+	left:0px;
+    width:auto;
+    height:2%; /*largeur  */	
+	color: black;
+	font-size: small; /*taille du texte */
+	text-align: center;
+	border-top:1px solid #505050;
+	font-family: georgia ;
+}
+
+html body .blocks
+{
+	display: inline-block; /* les block sont sur la meme ligne tant qu'ils ont la place sinon chacun sa ligne  */
+
+}
+
+html body header#left_block.blocks
+{
+	width: 250px;
+	height: 580px;
+
+}
+
+html body div#main_block.blocks
+
+{
+	position: relative;
+	padding-top: 0;
+	margin-top: 0;    
+    vertical-align: top;
+	width: 950px;
+	min-height: 620px;
+	text-align: center;
+	background-color: rgba(220, 220, 220, 0.6);
+
+}
+
+
+
+.identification
+{
+	width : 70%;
+	margin-top: 8%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #DCDCDC;
+	padding: 2%;
+	border-style: solid ;
+	border-color:#A9A9A9;
+	border-radius: 10px;
+
+}
+
+
+html body header#left_block.blocks img#logo
+
+{
+	width: auto;
+	height: 150px;
+	display: block;
+	margin-left:20px;
+	margin-top:20px	;
+}
+
+html body header#left_block.blocks div#menu
+{
+	margin-top:100px;
+	display: block;
+	width: 250px;
+	height: auto;
+	margin-left: 0;
+	font-family: georgia;
+}
+
+html body header#left_block.blocks div#conecter
+{
+	margin-top:0px;
+	display: block;
+	width: 250px;
+	height: auto;
+	margin-left: 20px;
+	font-family: georgia ;
+}
+
+ html body header#left_block.blocks div#menu div.options a:hover 
+{
+	background:#B0C4DE ;
+	color:white;
+} 
+
+html body header#left_block.blocks div#menu div.options
+{
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	border-style: solid ;
+	border-color:#DCDCDC;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0; 
+	background-color: rgba(220, 220, 220, 0.6);
+	
+	
+	
+}
+
+html body header#left_block.blocks div#menu div.options:first-child ,
+html body header#left_block.blocks div#menu div.options:first-child a
+{
+	
+	border-top-right-radius: 20px;
+}
+
+html body header#left_block.blocks div#menu div.options:last-child,
+html body header#left_block.blocks div#menu div.options:last-child a
+{
+
+	border-bottom-right-radius: 20px;
+}
+
+html body header#left_block.blocks div#menu div.options:last-child
+{
+	border-bottom-width: 1px;
+}
+
+html body header#left_block.blocks div#menu div.options.deco a
+{
+	background:#D00000 ;
+	color:white;
+}
+
+html body header#left_block.blocks div#menu div.options a
+{
+	text-decoration: none;
+	color:black;
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#affichage
+{	
+	color: black ;
+	border-collapse: collapse;
+}
+#affichage  td, tr
+{
+	border : 1px solid black;
+	padding : 8px;
+}
+
+#affichage thead  {
+   color: red;
+   font-weight: bold;
+}
+
+ .left_info {
+ color:red;
+ text-align: left;
+ }
+ 
+.right_info {
+color: blue; 
+text-align: left;
+ }
+
+.couleur_texte
+{
+color: red;
+}
+
